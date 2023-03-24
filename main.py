@@ -4,8 +4,10 @@ from flask import Flask, render_template, request , send_file,jsonify
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import PassiveAggressiveClassifier
 import pickle
+import sklearn
 import pandas as pd
 from sklearn.model_selection import train_test_split
+
 
 app = Flask(__name__,template_folder='template')
 tfvect = TfidfVectorizer(stop_words='english', max_df=0.7)
