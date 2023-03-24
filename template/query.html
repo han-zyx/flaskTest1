@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | Fake News Detector Pro</title>
+    <link rel="icon" href="static/pics/icon.PNG" type="image/icontype">
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/navbar_footer_response.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/query.css') }}">
+
+
+<script type="text/javascript" src="{{url_for('static',filename='js/query.js')}}"></script>
+
+    <script type="text/javascript"
+        src="/https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("E-DjM8CWvDF2Qvn3O");
+   })();
+</script>
+
+
+</head>
+
+<body>
+
+
+    <div>
+        <nav>
+            <a href="Home.html"><img class="logo" src="/static/pics/logo.PNG" alt="logo"></a>
+            <ul>
+                <li><a href="{{url_for('home')}}" >Home</a></li>
+                <li><a href="{{url_for('LNews')}}">Latest News</a></li>
+                <li><a href="{{url_for('TStory')}}">Top Stories</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('query')}}" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="row_1">
+        <div class="column_1">
+        </div>
+
+        <div class="column_2">
+            <div class="query_title">
+                Get in touch
+            </div>
+            <div class="query_title_text">
+                <p class="inquiry">Have an inquiry or some feedback for us? fill out the form here to contact our team
+                </p>
+                </br>
+                <p class="please_note"> Note :</p><br>
+                We can respond much more quickly to enquiries via the customer form supplied here.
+                </p> <br>
+                <p>
+                    We will acknowledge your complaint by e-mail within 3 calendar days and will normally respond to
+                    your
+                    complaint with a final decision within 7 calendar days. If we uphold your complaint, we will tell
+                    you
+                    the remedial actions we have taken.
+                </p> <br>
+                <p>
+                    If you are not satisfied with the final response to your complaint, or if you do not hear from us
+                    within
+                    7 calendar days of submitting your complaint, then you can refer your complaint to our
+                    <a href="mailto:ilsarakeminda@gmail.com" class="query_mail" target="_top">E mail</a>
+                </p>
+            </div>
+
+
+        </div>
+        <div class="column_3">
+            <div class="contact_us">
+
+                <!-- <form name="form" action="mailto:ilsarakeminda@gmail.com" method="post" enctype="text/plain"> -->
+
+                    <div class="input_feild">
+                        <label for="name"> Name :</label>
+                        <input type="text" class="form_input" name="url" id="url" >
+                    </div>
+
+                    <div class="input_feild">
+                        <label for="email">Email Address :</label>
+                        <input type="text" class="form_input" name="E mail" id="email" placeholder="alex@gmail.com">
+                    </div>
+
+                    <div class="input_feild">
+                        <label for="subject">What does your inquiry relate to :</label>
+                        <div class="subject_select">
+                            <select name="Subject" id="subject">
+                                <option value="">Select</option>
+                                <option value="Genreal inquiries">Genreal inquiries</option>
+                                <option value="Legal inquiries">Legal inquiries</option>
+                                <option value="Media inquiries">Media inquiries</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input_feild">
+                        <label for="details">Details :</label>
+                        <textarea class="form_textarea" name="Details" id="details" placeholder="Explain your query"></textarea >
+                    </div>
+                    <div class="btn">
+                        <button class="submit_btn" type="submit" id="view" onclick="queryForm();">Submit</button>
+                      
+                    </div>
+                <!-- </form> -->
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- </br></br></br></br></br></br></br></br></br> -->
+    <footer>
+        <div class="footer_content">
+            <h3> Fake News Detector <span>Pro</span></h3>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2023 Fake News Detector Pro. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Fake News Detector Pro</title>
+    <link rel="icon" href="static/pics/icon.PNG" type="image/icontype">
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="css/navbar_footer_response.css"> -->
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style1.css') }}">
+
+    <script type="text/javascript" src="{{url_for('static',filename='js/index.js')}}"></script>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="{{url_for('home')}}"><img class="logo" src="/static/pics/logo.PNG" alt="logo"></a>
+            <!-- <h2 class="logo">Fake news Detector <span> Pro</span></h2> -->
+            <ul>
+                <li><a href="{{url_for('home')}}" class="active">Home</a></li>
+                <li><a href="{{url_for('LNews')}}">Latest News</a></li>
+                <li><a href="{{url_for('TStory')}}">Top Stories</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('query')}}">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <div class="row_1">
+        <div class="column_23">
+            <img class="social_media_news"
+                src="/static/pics/Air India seals record order for almost 500 Airbus Boeing jets.webp" alt="logo"
+                width="400px" height="250px">
+        </div>
+
+        <div class="column_24">
+
+            <div class="row_13">
+
+                <!-- <div class="news_stat">News Stats</div> -->
+
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+            <br><br> <br>
+
+            <div class="row_14">
+                <button type="extension_link_button">
+                    <a class="extension_btn" href="/download " target="_blank">Get Extension
+                        here</a>
+                </button>
+            </div>
+
+        </div>
+    </div>
+<!--
+    <div class="row_15">
+
+        <div class="input_feild">
+            <label for="name">Paste your News here :</label>
+            <input type="text" class="form_input" name="First name" id="name">
+
+        </div>
+ -->
+    <div class="login">
+        <form action="{{ url_for('predict')}}" method="POST">
+            <textarea  name="message" rows="6" cols="50" required="required" style="font-size: 11pt"></textarea>
+            <br> </br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+            <div class="results">
+                {% if prediction == ['FAKE']%}
+                            <h2>This is Fake News </h2>
+                {% elif prediction == ['REAL']%}
+                            <h2><b>This is Real News</b></h2>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <div class="row_2 ">
+        <div class="column_1">
+            <h1 class="top_news">Top Stories</h1>
+            </br></br>
+
+            <div class="slides">
+                <a href="#Air India seals record order for almost 500 Airbus Boeing jets"><img class="mySlides"
+                        src="/static/pics/Ferrari reveal their 'Valentine' as new car launched for 2023 Formula 1 championship challenge.jpg"
+                        style="width:100%"></a>
+                <img class="mySlides"
+                    src="/static/pics/Paris Olympics Ukrainian president Volodymyr Zelenskyy says no place for Russia at 2024 Games while invasion continues.jpeg"
+                    style="width:100%">
+                <!-- <img class="mySlides" src="images/Ben Duckett vows to 'take every chance' for England | New Zealand overlook late Trent Boult call-up amid cyclone chaos .jpeg" style="width:100%"> -->
+            </div>
+
+            </br></br>
+            <div class="row_3">
+                <div class="column_3">
+                    <div>
+                        <img class="test" img src="/static/pics/Air India seals record order for almost 500 Airbus Boeing jets.webp" alt="logo"
+                            width="250" height="250">
+                    </div>
+                </div>
+
+                <div class="column_4" id="Air India seals record order for almost 500 Airbus Boeing jets">
+                    <h3>Air India seals record order for almost 500 Airbus Boeing jets</h3><br>
+                    <p>Air India unveiled deals on Tuesday for a record 470 jets from Airbus and Boeing, accelerating
+                        the rebirth of a national emblem under new owners Tata Group as Europe and the United States
+                        hailed deepening economic and political ties with New Delhi.
+                        <a href="{{url_for('news1India')}}">See More</a>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            </br> </br>
+            <div class="row_4">
+                <div class="column_5">
+                    <div>
+                        <img class="test" img class="test" src="/static/pics/Paris Olympics Ukrainian president Volodymyr Zelenskyy says no place for Russia at 2024 Games while invasion continues.jpeg" alt="logo" width="250" height="250">
+                    </div>
+                </div>
+
+                <div class="column_6">
+                    <h3>Paris Olympics Ukrainian president Volodymyr Zelenskyy says no place for Russia at 2024 Games while invasion continues</h3><br>
+                    <p>The IOC argues it would be discriminatory to exclude Russia and ally Belarus from sports ahead of the 2024 Paris Games; with qualifying in many sports already under way, the IOC wants athletes from those countries to compete in a neutral capacity without national symbols
+
+                        <a href="{{ url_for('news2Paris') }}">See More</a>
+                    </p>
+                </div>
+            </div>
+
+            </br> </br>
+            <div class="row_5">
+                <div class="column_7">
+                    <div>
+                        <img class="test" img src="/static/pics/Ferrari reveal their 'Valentine' as new car launched for 2023 Formula 1 championship challenge.jpg" alt="logo" width="250" height="250">
+                    </div>
+                </div>
+
+                <div class="column_8">
+                    <h3>Ferrari reveal their 'Valentine as new car launched for 2023 Formula 1 championship challenge</h3><br>
+                    <p>This is the car Ferrari hope will end their championship drought in 2023.The Scuderia revealed the SF-23 from their legendary Maranello base with drivers Charles Leclerc and Carlos Sainz, as well as new team boss Fred Vasseur and other senior management all present.
+                        <a href="{{ url_for('news3Ferrari') }}">See More</a>
+                    </p>
+                </div>
+            </div>
+
+            </br> </br>
+            <div class="row_6">
+                <div class="column_9">
+                    <div>
+                        <img src="/static/pics/Six Nations 2023- England's Kyle Sinckler a doubt for Wales game due to facial injury.jpeg" alt="logo" width="250" height="250">
+                    </div>
+                </div>
+
+                <div class="column_10">
+                    <h3>Six Nations 2023 England Kyle Sinckler a doubt for Wales game due to facial injury</h3><br>
+                    <p>Kyle Sinckler will not take part in this week's three-day training camp in London having sustained a facial injury in Sunday's win over Italy; Bath prop Will Stuart returns to the squad having recovered from dislocated elbow but Manu Tuilagi and Ben Youngs are both omitted again
+                        <a href="{{ url_for('news4Six') }}">See More</a>
+                    </p>
+                </div>
+            </div>
+
+
+            </br> </br>
+            <div class="row_7">
+                <div class="column_11">
+                    <div>
+                        <img src="/static/pics/Earthquake fans anti-Syrian sentiment in Turkey amid desperate conditions.jpg" alt="logo" width="250" height="250">
+                    </div>
+                </div>
+
+                <div class="column_12">
+                    <h3>Earthquake fans anti-Syrian sentiment in Turkey amid desperate conditions</h3><br>
+                    <p>The devastating earthquake to hit Turkey and Syria has fanned resentment among some Turks towards the millions of Syrian refugees in the country who are being blamed anecdotally by some for looting amid the destruction and chaos.
+                        <a href="{{ url_for('news5Earth') }}">See More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="column_2">
+            <h1 class="hot_news">Latest News</h1>
+            </br></br>
+            <div class="row_8">
+                <div class="column_13">
+                    <div>
+                        <img class="test" src="/static/pics/New Zealand declares national emergency as Cyclone Gabrielle wreaks havoc.jpeg" alt="logo" width="100" height="100">
+                    </div>
+                </div>
+
+                <div class="column_14">
+                    <h3>New Zealand declares national emergency as Cyclone Gabrielle wreaks havoc</h3><br>
+                    <p>New Zealand declared a national state of emergency for only the third time in its history on Tuesday as Cyclone Gabrielle caused widespread flooding, landslides and huge ocean swells, forcing evacuations and stranding people on roof tops.
+
+                        <a href="{{ url_for('news6Newz') }}">See More</a>
+                    </p>
+                </div>
+
+            </div>
+            </br>
+            <hr>
+            </br>
+            <div class="row_9">
+                <div class="column_15">
+                    <div>
+                        <img src="/static/pics/Tesla workers launch campaign to form union in New York.webp" alt="logo" width="100" height="100">
+                    </div>
+                </div>
+
+                <div class="column_16">
+                    <h3>Tesla workers launch campaign to form union in New York</h3><br>
+                    <p>Tesla Inc (TSLA.O) workers in New York state said on Tuesday they are launching a campaign to form a union, setting the stage for the latest labor challenge for Chief Executive Elon Musk.
+                        <a href="{{ url_for('news7Tesla') }}">See More</a>
+                    </p>
+                </div>
+            </div>
+
+            </br>
+            <hr>
+            </br>
+            <div class="row_10">
+                <div class="column_17">
+                    <div>
+                        <img src="/static/pics/Ben Duckett will take every chance for England, while New Zealand overlook Trent Boult.jpg" alt="logo" width="100" height="100">
+                    </div>
+                </div>
+
+                <div class="column_18">
+                    <h3>Ben Duckett will take every chance for England, while New Zealand overlook Trent Boult</h3><br>
+                    <p>Ben Duckett fell out of favour as quickly as he rose through the ranks, now he is determined to take every chance he can; "My sole focus is playing for England. I won't be missing out," Duckett said; New Zealand considered turning to local favourite Trent Boult to solve selection problems.
+                        <a href="{{ url_for('news8Ben') }}">See More</a>
+                    </p>
+                </div>
+            </div>
+
+            </br>
+            <hr>
+            </br>
+            <div class="row_11">
+                <div class="column_19">
+                    <div>
+                        <img src="/static/pics/China's Xi calls for early resolution of Iran nuclear issue.jpg" alt="logo" width="100" height="100">
+                    </div>
+                </div>
+
+                <div class="column_20">
+                    <h3>China Xi calls for early resolution of Iran nuclear issue</h3><br>
+                    <p>China's President Xi Jinping on Tuesday called for the early and proper resolution of the Iran nuclear issue while expressing his support for the Islamic Republic in safeguarding its rights and interests, according to Chinese state media...
+
+                        <a href="{{ url_for('news9China') }}">See More</a>
+                    </p>
+                </div>
+            </div>
+
+            </br>
+            <hr>
+            </br>
+
+            <div class="row_12">
+                <div class="column_21">
+                    <div>
+                        <img src="/static/pics/Lebanon PM under house arrest in Saudi Arabia.jpeg" alt="logo" width="100" height="100">
+                    </div>
+                </div>
+
+                <div class="column_22">
+                    <h3>Lebanon PM under house arrest in Saudi Arabia</h3><br>
+                    <p>Saad al-Hariri, who quit as Lebanese Prime Minister in a weekend broadcast from Saudi Arabia, has been held under house arrest in the kingdom, a pro-Hezbollah daily said on Tuesday citing unnamed sources. Hariri s office and Saudi-owned media said he flew to the UAE, a Saudi ally and fellow Gulf monarchy, on Tuesday. Aides to Hariri, Lebanon s most influential Sunni politician and a close Saudi ally, have denied claims that he was detained.
+                        <a href="{{ url_for('news10Leb') }}">See More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer_content">
+            <h3> Fake News Detector <span>Pro</span></h3>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2023 Fake News Detector Pro. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <!--
+<a href=" https://twitter.com/NewsfirstSL" target="blank">
+    <img src="https://cdn.newsfirst.lk/assets/twitter.webp" alt="twitter.png" class="bottom_img">
+</a>
+</div>
+
+<div _ngcontent-serverapp-c60="" fxflex="1 1 auto" style="flex: 1 1 auto; box-sizing: border-box;"><a
+        _ngcontent-serverapp-c60="" href=" https://www.instagram.com/newsfirst.lk/" target="blank"
+        style="text-decoration: none;"><img _ngcontent-serverapp-c60=""
+            src="https://cdn.newsfirst.lk/assets/instagram_2.webp" alt="instagram.png" class="bottom_img"></a></div>
+
+<div _ngcontent-serverapp-c60="" fxflex="1 1 auto" style="flex: 1 1 auto; box-sizing: border-box;"><a
+        _ngcontent-serverapp-c60="" href="  https://www.facebook.com/NewsfirstSL" target="blank"
+        style="text-decoration: none;"><img _ngcontent-serverapp-c60=""
+            src="https://cdn.newsfirst.lk/assets/facebook_2.webp" alt="facebook.png" class="bottom_img"></a></div>
+
+<div _ngcontent-serverapp-c60="" fxflex="1 1 auto" style="flex: 1 1 auto; box-sizing: border-box;"><a
+        _ngcontent-serverapp-c60="" href="https://bit.ly/news1stviber" target="blank"
+        style="text-decoration: none;"><img _ngcontent-serverapp-c60="" src="https://cdn.newsfirst.lk/assets/viber.webp"
+            alt="viber.png" class="bottom_img"></a></div>
+
+<div _ngcontent-serverapp-c60="" fxflex="1 1 auto" style="flex: 1 1 auto; box-sizing: border-box;"><a
+        _ngcontent-serverapp-c60="" href="  https://www.youtube.com/user/NewsFirstSrilanka" target="blank"
+        style="text-decoration: none;"><img _ngcontent-serverapp-c60=""
+            src="https://cdn.newsfirst.lk/assets/youtube.webp" alt="youtube.png" class="bottom_img"></a></div>
+
+<div _ngcontent-serverapp-c60="" fxflex="1 1 auto" style="flex: 1 1 auto; box-sizing: border-box;"><img
+        _ngcontent-serverapp-c60="" src="https://cdn.newsfirst.lk/assets/whatsapp_2.webp" alt="" class="bottom_img">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+-->
+
+
+
+</body>
+
+</html>

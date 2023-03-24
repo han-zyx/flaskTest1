@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fake News Detector Pro | Home</title>
+    <link rel="icon" href="static/pics/icon.PNG" type="image/icontype">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/navbar_footer_response.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/news_pages.css') }}">
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <div class="hero">
+        <nav>
+            <a href="{{url_for('home')}}"><img class="logo" src="/static/pics/logo.PNG" alt="logo"></a>
+            <!-- <h2 class="logo">Fake news Detector <span> Pro</span></h2> -->
+            <ul>
+
+                <li><a href="{{url_for('home')}}" >Home</a></li>
+                <li><a href="{{url_for('LNews')}}" class="active">Latest News</a></li>
+                <li><a href="{{url_for('TStory')}}">Top Stories</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('query')}}">Contact Us</a></li>
+
+            </ul>
+            <!-- <button type="button">Profile</button> -->
+        </nav>
+    </div>
+
+
+
+    <div class="row_1 ">
+        <div class="column_1">
+            <h1> Five migrants die when boat sinks</h1><br>
+            <div class="news_page_image">
+                <img src="/static/pics/Five migrants die when boat sinks.gif" alt="logo"
+                    width="100%" height="100%">
+            </div>
+            <div class="news">
+			
+			    <p>At least five African migrants died and more were missing off western Libya on Monday after a boat carrying about 140 people capsized and then some migrants refused rescue by the Libyan coast guard and tried instead to swim to a German rescue vessel. The migrants  rubber boat overturned some 30 miles off the Libyan coast, said Libyan officials and rescue workers in Tripoli to where the coast guard brought some 45 survivors. 
+                </p>
+                </br>
+				<p>A video obtained by Reuters showed how, during the rescue operation, some migrants tried jumping off the Libyan patrol boat which had rescued them to reach a ship of Seawatch, a German non-governmental organization, a few meters away. Some screamed to be allowed to leave the Libyan boat as the German vessel came closer. The Libyans tried to discourage the migrants from trying to reach the German boat, Seawatch said. 
+                </p>
+                </br>
+				<p>The incident sparked mutual recrimination by Seawatch and the Libyan coast guard. At least five migrants had died, including a toddler, due to the  violent and reckless behavior of (the) Libyan coast guards,  Seawatch said on its Twitter feed, adding that 58 had been rescued.  The so-called Libyan Coastguard forced as many as they could into their vessel to take them back to Tripoli,  the German group added. 
+                </p>
+                </br>
+				<p>The Libyan coast guard said an unknown number of people had died after their inflatable boat had sunk and Abu Ajala Amer Abdelbari, a coast guard commander, said the German NGO had undermined its rescue operations by approaching its boat.  
+                </p>
+                </br>
+				<p>The Seawatch was approaching while we were rescuing migrants,  he said.  This was encouraging the migrants to swim to the Seawatch and a (nearby) French navy ship.  The survivors brought to Tripoli were from West African countries including Nigeria and Senegal.  
+                </p>
+                </br>
+				<p>I wanted to reach Italy. I don t know what to do now,  said Dora Onoruyi, a 23-year old arts student from the southern Nigerian city of Benin known as hub for human traffickers to smuggle women to Italy where they often end up as prostitutes.  
+                </p>
+                </br>
+				<p>I see no future in Nigeria, there are no jobs,  she said, standing next to a group of weeping Nigerian survivors. Libya is the main departure point for migrants trying to travel by boat to Europe. But numbers crossing to Italy have fallen sharply since July due to a drop in people smuggling and increased activity by Libya s European-backed coastguard.
+                </p>
+               
+		     </div>
+
+
+            <div>
+                <h2 class="hot_news">Latest News</h2>
+            </div>
+
+            <div class="row_8">
+
+                <div class="column_15">
+                    <a class="vertical_news" href="{{ url_for('news3Ferrari') }}">
+
+                        <div class="row_9">
+                            <img src="/static/pics/Ferrari reveal their 'Valentine' as new car launched for 2023 Formula 1 championship challenge.jpg"
+                                alt="logo" width="100%" height="100%">
+
+                        </div>
+
+                        <div class="row_10">
+                            <h4>Ferrari reveal their 'Valentine as new car launched for 2023 Formula 1 championship challenge</h4>
+                        </div>
+
+                    </a>
+                        <div class="row_11">
+                            <p>This is the car Ferrari hope will end their championship drought in
+                                </p>
+                        </div>
+                    
+                </div>
+
+
+                <div class="vl"></div>
+
+
+                <div class="column_15">
+                    <a class="vertical_news" href="{{ url_for('news1India') }}">
+
+                    <div class="row_9">
+                    <img src="/static/pics/Air India seals record order for almost 500 Airbus Boeing jets.webp"
+                                width="100%" height="100%">
+                        </div>
+
+                        <div class="row_10">
+                            <h4>Air India seals record order for almost 500 Airbus Boeing jets</h4>
+                        </div>
+
+                    </a>
+                        <div class="row_11">
+                            <p>Air India unveiled deals on Tuesday for a record 470 jets from Airbus and Boeing, </p>
+                        </div>   
+						
+						</div>
+
+
+                <div class="vl"></div>
+
+
+                <div class="column_15">
+                    <a class="vertical_news" href="{{ url_for('news15Forces') }}">
+
+                        <div class="row_9">
+                           <img src="/static/pics/Indian forces kill militant leader's nephew in Kashmir, police say.jpeg"
+                                width="100%" height="100%">
+                        </div>
+
+                        <div class="row_10">
+                            <h4>Indian forces kill militant leader's nephew in Kashmir, police say</h4>
+                        </div>
+
+                    </a>
+                        <div class="row_11">
+                            <p>Indian soldiers killed a relative of a top Pakistan-based militant in a gunbattle in southern Kashmir, </p>
+                        </div> 
+                    
+
+                </div>
+
+
+                <div class="vl"></div>
+
+
+                <div class="column_15">
+                    <a class="vertical_news" href="{{ url_for('news5Earth') }}">
+
+                        <div class="row_9">
+                            <img src="/static/pics/Earthquake fans anti-Syrian sentiment in Turkey amid desperate conditions.jpg"
+                                alt="logo"  width="100%" height="100%">
+                        </div>
+
+                        <div class="row_10">
+                            <h4>Earthquake fans anti-Syrian sentiment in Turkey amid desperate conditions</h4>
+                        </div>
+
+                    </a>
+                        <div class="row_11">
+                            <p>The devastating earthquake to hit Turkey and Syria has fanned resentment among some Turks towards </p>
+                        </div>    
+						
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column_2">
+            <div>
+                <h2 class="top_news">Top Stories</h2>
+            </div>
+            <div class="row_2">
+                <div class="column_3">
+                    <img src="/static/pics/Second U.S. judge blocks Trump administration birth control rules.jpeg" alt="logo"
+                        width="100%" height="100%">
+                </div>
+
+                <div class="column_4">
+                    <h3>Second U.S. judge blocks Trump administration birth control rules</h3>
+                    <p>A second U.S. judge on Thursday blocked President Donald Trump’s administration from enforcing new rules  
+                        <a href="{{ url_for('news18Sec') }}" class="button">See More</a>
+                    </p>
+                </div>
+            </div>
+            </br>
+            <hr>
+            </br>
+
+
+            <div class="row_3">
+                <div class="column_5">
+                    <img src="/static/pics/New Zealand declares national emergency as Cyclone Gabrielle wreaks havoc.jpeg" alt="logo"
+                        width="100%" height="98%">
+                </div>
+
+                <div class="column_6">
+                    <h3>New Zealand declares national emergency as Cyclone Gabrielle wreaks havoc</h3>
+                    <p>New Zealand declared a national state of emergency for only the third time in its history on <a href="{{ url_for('news6Newz') }}" class="button">See More</a>
+                    </p>
+                </div>
+            </div>
+        </br>
+        <hr>
+        </br>
+
+            <div class="row_4">
+                <div class="column_7">
+                    <img src="/static/pics/Lebanon PM under house arrest in Saudi Arabia.jpeg"
+                        alt="logo" width="100%" height="100%">
+                </div>
+
+                <div class="column_8">
+                    <h3>Lebanon PM under house arrest in Saudi Arabia</h3>
+                    <p>Saad al-Hariri, who quit as Lebanese Prime Minister in a weekend broadcast from Saudi Arabia, 
+                        <a href="{{ url_for('news10Leb') }}" class="button">See More</a></p>
+                    </p>
+                </div>
+            </div>
+            </br>
+            <hr>
+            </br>
+
+            <div class="row_5">
+                <div class="column_9">
+                    <img src="/static/pics/Trump US has no choice but to deal with North Korea arms challenge.jpeg" alt="logo"
+                        width="100%" height="100%">
+                </div>
+
+                <div class="column_10">
+                    <h3>Trump US has no choice but to deal with North Korea arms challenge</h3>
+                    <p>President Donald Trump unveiled a new national security strategy on Monday, <a href="{{ url_for('news19Trump') }}" class="button">See More</a>
+                    </p> 
+                </div>
+            </div>
+            </br>
+            <hr>
+            </br>
+
+            <div class="row_6">
+                <div class="column_11">
+                  <img src="/static/pics/Paris Olympics Ukrainian president Volodymyr Zelenskyy says no place for Russia at 2024 Games while invasion continues.jpeg" width="100%" height="95%">
+                </div>
+
+                <div class="column_12">
+                    <h3>Paris Olympics Ukrainian president Volodymyr Zelenskyy says no place for Russia at 2024 Games while invasion continues</h3>          
+					<p>The IOC argues it would be  
+                        <a href="{{ url_for('news2Paris') }}" class="button">See More</a>
+                    </p> 
+                </div>
+            </div>
+            </br>
+            <hr>
+            </br>
+
+            <div class="row_7">
+                <div class="column_13">
+                    <img src="/static/pics/Tesla workers launch campaign to form union in New York.webp"
+                        alt="logo" width="100%" height="100%">
+                </div>
+
+                <div class="column_14">
+                    <h3>Tesla workers launch campaign to form union in New York</h3>
+                    <p>Tesla Inc (TSLA.O) workers in New York state said on Tuesday they are launching a campaign <a href="{{ url_for('news7Tesla') }}" class="button">See More</a>
+                    </p>
+                </div>
+            </div>
+            </br>
+            <hr>
+            </br>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    </br> </br> </br>
+    <footer>
+        <div class="footer_content">
+            <h3> Fake News Detector <span>Pro</span></h3>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2023 Fake News Detector Pro. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="../js/home.js"></script>
+
+
+
+
+
+</body>
+
+</html>

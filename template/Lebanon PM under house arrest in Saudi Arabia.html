@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fake News Detector Pro | Home</title>
+    <link rel="icon" href="static/pics/icon.PNG" type="image/icontype">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/navbar_footer_response.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/news_pages.css') }}">
+
+
+
+
+</head>
+
+<body>
+
+
+    <div class="hero">
+        <nav>
+           <a href="{{url_for('home')}}"><img class="logo" src="/static/pics/logo.PNG" alt="logo"></a>
+            <!-- <h2 class="logo">Fake news Detector <span> Pro</span></h2> -->
+            <ul>
+                <li><a href="{{url_for('home')}}" >Home</a></li>
+                <li><a href="{{url_for('LNews')}}">Latest News</a></li>
+                <li><a href="{{url_for('TStory')}}" class="active">Top Stories</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('query')}}">Contact Us</a></li>
+            </ul>
+            <!-- <button type="button">Profile</button> -->
+        </nav>
+    </div>
+
+
+
+    <div class="row_1 ">
+        <div class="column_1">
+            <h1> Lebanon PM under house arrest in Saudi Arabia</h1><br>
+            <div class="news_page_image">
+                <img src="/static/pics/Lebanon PM under house arrest in Saudi Arabia.jpeg" alt="logo"
+                    width="100%" height="100%">
+            </div>
+            <div class="news">
+			
+			    <p>Saad al-Hariri, who quit as Lebanese Prime Minister in a weekend broadcast from Saudi Arabia, has been held under house arrest in the kingdom, a pro-Hezbollah daily said on Tuesday citing unnamed sources. Hariri s office and Saudi-owned media said he flew to the UAE, a Saudi ally and fellow Gulf monarchy, on Tuesday. Aides to Hariri, Lebanon s most influential Sunni politician and a close Saudi ally, have denied claims that he was detained.  
+                </p>
+                </br>
+				<p>Lebanese newspaper al-Akhbar, which is aligned with the Shi ite militant group and political movement Hezbollah, said Hariri  was placed under house arrest hours after arriving in Riyadh last Friday  and had remained in detention since.  On Monday, Saudi Foreign Minister Adel Jubeir dismissed as  nonsense  allegations that the kingdom forced Hariri to resign, and said he was free to leave at any time. Speculation in Lebanon over Hariri s status continued even after Saudi media showed him meeting with King Salman and reported him leaving for the UAE. Hariri s resignation has thrust Lebanon back onto the frontline of the rivalry between Sunni Saudi Arabia and Shi ite Iran that has also wrought upheaval in Syria, Iraq, Yemen and Bahrain.
+                </p>
+                </br>
+				<p>The coalition government, which Hariri s shock resignation collapsed, included Iran-backed Hezbollah. His declaration came as Saudi Arabia undertook an anti-corruption purge in which royals, ministers and investors have been arrested as the putative next king tightens his grip on power. In a dramatic escalation of the crisis, Saudi Arabia accused Lebanon on Monday of declaring war because of aggression by Hezbollah. Hezbollah leader Sayyed Hassan Nasrallah accused Riyadh last week of forcing Hariri to step down, and said there were  legitimate questions  over whether he had been detained
+                </p>
+                </br>
+				<p>The al-Akhbar newspaper said that a Saudi security team had been supervising Hariri, citing unnamed sources close to him. The prime minister, whose family made their fortune in the Saudi construction industry, had very limited access to his phones, it said on Tuesday.    Fouad Siniora, a former prime minister and senior member of Hariri s political party, said Hariri would return to Lebanon.
+                </p>
+                
+		     </div>
+
+
+            <div>
+                <h2 class="hot_news">Latest News</h2>
+            </div>
+
+            <div class="row_8">
+
+                <div class="column_15">
+                    <a class="vertical_news" href="{{ url_for('news14Five') }}">
+
+                        <div class="row_9">
+                            <img src="/static/pics/Five migrants die when boat sinks.gif"
+                                alt="logo" width="100%" height="100%">
+
+                        </div>
+
+                        <div class="row_10">
+                            <h4>Five migrants die when boat sinks</h4>
+                        </div>
+
+                    </a>
+                        <div class="row_11">
+                            <p>At least five African migrants died and more were missing off western Libya on Monday after a boat carrying about 140 people capsized and then some migrants refused rescue by the   </p>
+                        </div>
+                    
+                </div>
+
+
+                <div class="vl"></div>
+
+
+                <div class="column_15">
+                    <a class="vertical_news" href="{{ url_for('news13FBI') }}">
+
+                    <div class="row_9">
+                    <img src="/static/pics/FBI Russia probe helped by Australian diplomat tip.webp"   alt="logo" width="100%" height="100%">
+
+                        </div>
+
+                        <div class="row_10">
+                            <h4>FBI Russia probe helped by Australian diplomat tip
+                            </h4>
+                        </div>
+                    </a>
+
+                        <div class="row_11">
+                            <p>Trump campaign adviser George Papadopoulos told an Australian diplomat in May 2016 that Russia had political dirt on Democratic presidential candidate</p>
+                        </div>  
+						
+						</div>
+
+
+                <div class="vl"></div>
+
+
+                <div class="column_15">
+                    <a class="vertical_news" href="{{ url_for('news15Forces') }}">
+
+                        <div class="row_9">
+                           <img src="/static/pics/Indian forces kill militant leader's nephew in Kashmir, police say.jpeg"
+                                width="100%" height="100%">
+                        </div>
+
+                        <div class="row_10">
+                            <h4>Indian forces kill militant leader's nephew in Kashmir, police say</h4>
+                        </div>
+
+                    </a>
+                        <div class="row_11">
+                            <p>Indian soldiers killed a relative of a top Pakistan-based militant in a gunbattle in southern Kashmir, </p>
+                        </div>
+                       
+                    
+
+                </div>
+
+
+                <div class="vl"></div>
+
+
+                <div class="column_15">
+                    <a class="vertical_news" href="{{ url_for('news8Ben') }}">
+
+                        <div class="row_9">
+                            <img src="/static/pics/Ben Duckett will take every chance for England, while New Zealand overlook Trent Boult.jpg"
+                                alt="logo" width="100%" height="100%">
+
+                        </div>
+
+                        <div class="row_10">
+                            <h4>Ben Duckett will take every chance for England, while New Zealand overlook Trent Boult.
+                            </h4>
+                        </div>
+                    </a>
+
+                        <div class="row_11">
+                            <p>Ben Duckett fell out of favour as quickly as he rose through the ranks</p>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column_2">
+            <div>
+                <h2 class="top_news">Top Stories</h2>
+            </div>
+            <div class="row_2">
+                <div class="column_3">
+                    <img src="/static/pics/Paris Olympics Ukrainian president Volodymyr Zelenskyy says no place for Russia at 2024 Games while invasion continues.jpeg" width="100%" height="98%">
+                </div>
+
+                <div class="column_4">
+                    <h3>Paris Olympics Ukrainian president Volodymyr Zelenskyy says no place for Russia at 2024 Games while invasion continues</h3>          
+					<p>The IOC argues it would be  
+                        <a href="{{ url_for('news2Paris') }}" class="button">See More</a>
+                    </p>
+                </div>
+            </div>
+            </br>
+            <hr>
+            </br>
+
+
+            <div class="row_3">
+                <div class="column_5">
+                    <img src="/static/pics/Republicans seek to question FBI officials in Clinton probe- letter.jpg" alt="logo"
+                        width="100%" height="100%">
+                </div>
+
+                <div class="column_6">
+                    <h3>Republicans seek to question FBI officials in Clinton probe</h3>
+                    <p>Two Republican lawmakers told the U.S. Department of Justice on Tuesday that they want to question three 
+                        <a href="{{ url_for('news17Reb') }}" class="button">See More</a>
+                    </p>
+                </div>
+            </div>
+        </br>
+        <hr>
+        </br>
+
+            <div class="row_4">
+                <div class="column_7">
+                    <img src="/static/pics/Instant View House approves biggest tax overhaul in 30 years, Senate next.jpeg"
+                        alt="logo" width="100%" height="100%">
+                </div>
+
+                <div class="column_8">
+                    <h3>Instant Viewb House approves biggest tax overhaul in 30 years</h3>
+                    <p>The Republican-controlled U.S. House of Representatives approved sweeping, debt-financed tax legislation on<a href="{{ url_for('news16Instant') }}" class="button">See More</a>
+                    </p>
+                </div>
+            </div>
+            </br>
+            <hr>
+            </br>
+
+            <div class="row_5">
+                <div class="column_9">
+                    <img src="/static/pics/Six Nations 2023- England's Kyle Sinckler a doubt for Wales game due to facial injury.jpeg" alt="logo"
+                        width="100%" height="100%">
+                </div>
+
+                <div class="column_12">
+                    <h3>Six Nations 2023 England Kyle Sinckler a doubt for Wales game due to facial injury</h3>
+                    <p>Kyle Sinckler will not take part in this week's three-day training camp in 
+                        <a href="{{ url_for('news4Six') }}" class="button">See More</a>
+                    </p>
+                </div>
+            </div>
+            </br>
+            <hr>
+            </br>
+
+            <div class="row_6">
+                <div class="column_11">
+                  <img src="/static/pics/White House says tax bill will not hurt Puerto Rico _ Reuters.jpeg"
+                        alt="logo" width="100%" height="100%">
+                </div>
+
+                <div class="column_12">
+                    <h3>White House says tax bill will not hurt Puerto Rico _ Reuters</h3>
+                    <p>Sweeping tax code changes aimed at keeping U.S. companies from shifting profits offshore to avoid 
+                        <a href="{{ url_for('news20White') }}" class="button">See More</a></p>
+                    </p>
+                </div>
+            </div>
+            </br>
+            <hr>
+            </br>
+
+            <div class="row_7">
+                <div class="column_13">
+                    <img src="/static/pics/Trump US has no choice but to deal with North Korea arms challenge.jpeg" alt="logo"
+                        width="100%" height="100%">
+                </div>
+
+                <div class="column_14">
+                    <h3>Trump US has no choice but to deal with North Korea arms challenge</h3>
+                    <p>President Donald Trump unveiled a new national security strategy on Monday, <a href="{{ url_for('news19Trump') }}" class="button">See More</a>
+                    </p> 
+                </div>
+            </div>
+            </br>
+            <hr>
+            </br>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    </br> </br> </br>
+    <footer>
+        <div class="footer_content">
+            <h3> Fake News Detector <span>Pro</span></h3>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2023 Fake News Detector Pro. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="../js/home.js"></script>
+
+
+
+
+
+</body>
+
+</html>

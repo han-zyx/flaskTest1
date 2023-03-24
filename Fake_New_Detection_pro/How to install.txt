@@ -1,0 +1,7 @@
+1.Open your Chrome Browser
+2.Click Customize and Control google chrome by clicking 3 dots in right top corner in your browser.
+3.Click to More Tools
+4.Click Extentions
+5.Turn oN Developer Mode in top right corner
+6.Click Load Unpacked
+7.Select Unziped extention Folder.
