@@ -41,7 +41,7 @@ def predict():
 
 @app.route('/download')
 def download():
-    return send_file('Fake_New_Detection_pro.rar', as_attachment = True)
+    return send_file('FakeNewDetection_pro.rar', as_attachment = True)
 
 
 @app.route('/about')
