@@ -1,7 +1,7 @@
 html,
 body {
-    width: 350px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -15,7 +15,7 @@ body {
 .logo {
 
     width: 60%;
-    height: 35%;
+    height: 18%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -23,19 +23,24 @@ body {
     margin-bottom: auto;
 }
 
+.form_textarea{
+  height: 40px; 
+  width: 230px;
+}
+
 button {
     border: none;
-    background: red;
-    padding: 12px 30px;
-    border-radius: 30px;
+    background: rgb(236, 57, 57);
+    padding: 10px 25px;
+    border-radius: 20px;
     color: black;
     font-weight: bold;
     font-size: 15px;
-    transition: .4s;
+    transition: .2s;
   }
   
   button:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
     cursor: pointer;
   }
   
