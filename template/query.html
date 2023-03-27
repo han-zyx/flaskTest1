@@ -11,26 +11,28 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static',filename='css/navbar_footer_response.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='css/query.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/style1.css') }}">
 
 
-    <script type="text/javascript" src="{{url_for('static',filename='js/query.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static',filename='js/query.js')}}"></script>
 
-    <script type="text/javascript" src="/https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    <script type="text/javascript"
+        src="/https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
-
-
 <script type="text/javascript">
    (function(){
       emailjs.init("E-DjM8CWvDF2Qvn3O");
    })();
 </script>
+
+
 </head>
 
 <body>
+
+
     <div>
         <nav>
-            <a href="{{url_for('home')}}"><img class="logo" src="/static/pics/logo-removebg-preview.png" alt="logo"></a>
+            <a href="Home.html"><img class="logo" src="/static/pics/logo.PNG" alt="logo"></a>
             <ul>
                 <li><a href="{{url_for('home')}}" >Home</a></li>
                 <li><a href="{{url_for('LNews')}}">Latest News</a></li>
@@ -38,9 +40,6 @@
                 <li><a href="{{url_for('about')}}">About</a></li>
                 <li><a href="{{url_for('query')}}" class="active">Contact Us</a></li>
             </ul>
-            <button type="extension_link_button">
-                <a class="extension_btn" href="/download " target="_blank">Get Extension here</a>
-            </button>
         </nav>
     </div>
 
