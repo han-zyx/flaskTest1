@@ -87,7 +87,7 @@
             <form action="{{ url_for('predict')}}" method="POST">
                 <textarea  rows="6" cols="80" required="required" style="font-size: 11pt" placeholder="Enter the news here."></textarea>
                 <br><br>
-                <button type="submit" class="btn-primary">Detect</button>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Detect</button>
     
                 <div class="results">   
                     {% if prediction == ['FAKE']%}
