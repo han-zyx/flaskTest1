@@ -303,6 +303,9 @@ svg{
     stroke-dashoffset: 165;
   }
 }
-
+.td{
+   padding-left:2%;
+   padding-right:2%;
+}
 
 
