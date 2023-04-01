@@ -1,5 +1,5 @@
 function randomTopStories() {
-    var urls = ["News_Pages/Five migrants die when boat sinks.html",
+    let urls = ["News_Pages/Five migrants die when boat sinks.html",
         "News_Pages/Ferrari reveal their 'Valentine as new car launched for 2023 Formula 1 championship challenge.html",
         "News_Pages/FBI Russia probe helped by Australian diplomat tip.html",
         "News_Pages/Earthquake fans anti-Syrian sentiment in Turkey amid desperate conditions.html",
@@ -10,7 +10,7 @@ function randomTopStories() {
         "News_Pages/Air India seals record order for almost 500 Airbus Boeing jets.html",
     ];
 
-    var randomIndex = Math.floor(Math.random() * urls.length);
-    var randomUrl = urls[randomIndex];
+    let randomIndex = Math.floor(Math.random() * urls.length);
+    let randomUrl = urls[randomIndex];
     window.location = randomUrl;
 }
