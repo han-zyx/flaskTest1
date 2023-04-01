@@ -70,13 +70,12 @@ html {
    }
 
 nav {
-    /* background-color: aqua; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
     padding-left: 5%;
-    padding-right: 10%;
+    padding-right: 15%;
 
 }
 
@@ -99,7 +98,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgba(0, 0, 255, 0.875);
+    color: blue;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
