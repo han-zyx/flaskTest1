@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+
     <!--
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,12 +14,35 @@
     <title>Top Stories | Fake News Detector Pro</title>
         <link rel="icon" href="static/pics/icon.PNG" type="image/icontype"> -->
 
-    <script type="text/javascript" src="{{url_for('static',filename='js/top_stories.js')}}"></script>
+  <!--  <script type="text/javascript" src="{{url_for('static',filename='js/top_stories.js')}}"></script> -->
+
+    <head>
+
+<script type="text/javascript">
+
+// Create an array of the links to choose from:
+var links = new Array();
+links[0] = "http://www.google.com/";
+links[1] = "http://www.bing.com/";
+links[2] = "http://www.yahoo.com/";
+links[3] = "http://www.apple.com/";
+
+function openLink() {
+  // Chooses a random link:
+  var i = Math.floor(Math.random() * links.length);
+  // Directs the browser to the chosen target:
+  parent.location = links[i];
+  return false;
+}
+
+</script>
 
 
 </head>
 
 <body>
+
+echo "<meta http-equiv='refresh' content=0;URL="openLink();">
 
 <!--
 
