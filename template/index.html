@@ -7,8 +7,6 @@
     <title>Home | Fake News Detector Pro</title>
     <link rel="icon" href="static/pics/icon.PNG" type="image/icontype">
 
-    <!-- CSS -->
-    <!-- <link rel="stylesheet" href="css/navbar_footer_response.css"> -->
 
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style1.css') }}">
@@ -35,56 +33,10 @@
             </nav>
         </div>
 
-        <!-- <div class="row_1">
-            <div class="column_23">
-                <img class="social_media_news"
-                    src="/static/pics/Air India seals record order for almost 500 Airbus Boeing jets.webp" alt="logo"
-                    width="400px" height="250px">
-            </div>
-
-            <div class="column_24">
-
-                <div class="row_13">
-
-                    <div class="skill">
-                        <div class="outer">
-                            <div class="inner">
-                                <div id="number">
-                                </div>
-                            </div>
-                        </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                            <defs>
-                                <linearGradient id="GradientColor">
-                                    <stop offset="0%" stop-color="#e91e63" />
-                                    <stop offset="100%" stop-color="#673ab7" />
-                                </linearGradient>
-                            </defs>
-                            <circle cx="80" cy="80" r="70" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                </div>
-                <br><br> <br>
-
-                <div class="row_14">
-
-                </div>
-
-            </div>
-        </div> -->
-    <!--
-        <div class="row_15">
-
-            <div class="input_feild">
-                <label for="name">Paste your News here :</label>
-                <input type="text" class="form_input" name="First name" id="name">
-
-            </div>
-    -->
+      
         <div class="login">
             <form action="{{ url_for('predict')}}" method="POST">
-                <textarea  name="message" rows="6" cols="50" required="required" style="font-size: 11pt"></textarea>
+                <textarea  name="message" rows="6" cols="100" required="required" style="font-size: 11pt"></textarea>
                 <br> </br>
                 <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
 
@@ -97,8 +49,6 @@
                 </div>
             </form>
         </div>
-
-
 
         <!----Top stories section ----->
 
