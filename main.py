@@ -7,6 +7,7 @@ import pickle
 import sklearn
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from flask import Mail,Message
 
 
 app = Flask(__name__,template_folder='template')
