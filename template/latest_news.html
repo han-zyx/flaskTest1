@@ -1,39 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-
-     <link rel="stylesheet" href="{{ url_for('static',filename='css/navbar_footer_response.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/query.css') }}">
+<script type="text/javascript">
 
 
-    <title>Top Stories | Fake News Detector Pro</title>
-        <link rel="icon" href="static/pics/icon.PNG" type="image/icontype">
+var links = new Array();
+links[0] = "https://web-production-2888.up.railway.app/news15Forces";
+links[1] = "https://web-production-2888.up.railway.app/news7Tesla";
+links[2] = "https://web-production-2888.up.railway.app/news5Earth";
+links[3] = "https://web-production-2888.up.railway.app/news1India";
+links[4] = "https://web-production-2888.up.railway.app/news6Newz";
+links[5] = "https://web-production-2888.up.railway.app/news4Six";
+links[6] = "https://web-production-2888.up.railway.app/news9China";
+links[7] = "https://web-production-2888.up.railway.app/news12Court";
+links[8] = "https://web-production-2888.up.railway.app/news14Five";
 
+function openLink() {
+
+  var i = Math.floor(Math.random() * links.length);
+
+  parent.location = links[i];
+  return false;
+}
+
+</script>
 
 </head>
 
-<body>
+<body onload="openLink();">
 
- <div>
-        <nav>
-            <a href="{{url_for('home')}}"><img class="logo" src="/static/pics/logo.PNG" alt="logo"></a>
-            <!-- <h2 class="logo">Fake news Detector <span> Pro</span></h2> -->
-            <ul>
-                <li><a href="{{url_for('home')}}" class="active">Home</a></li>
-                <li><a href="{{url_for('LNews')}}">Latest News</a></li>
-                <li><a href="{{url_for('TStory')}}">Top Stories</a></li>
-                <li><a href="{{url_for('about')}}">About</a></li>
-                <li><a href="{{url_for('query')}}">Contact Us</a></li>
-            </ul>
-
-        </nav>
-    </div>
 </body>
-
-
 
 </html>
