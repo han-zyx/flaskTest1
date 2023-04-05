@@ -14,28 +14,7 @@
 
     <script type="text/javascript" src="{{url_for('static',filename='js/index.js')}}"></script>
 
-    <style>
-        /* CSS styles for the slideshow */
-        .slideshow {
-            width: 100%;
-            height: 400px;
-            position: relative;
-        }
 
-        .slideshow img {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
-        .slideshow img.active {
-            opacity: 1;
-        }
-    </style>
 </head>
 
     <body>
@@ -81,9 +60,19 @@
                 <h1 class="top_news">Top Stories</h1>
                 </br></br>
 
-                <div class="slideshow">
-                    <img src="/static/pics/Six Nations 2023- England's Kyle Sinckler a doubt for Wales game due to facial injury.jpeg">
-                    <img src="/static/pics/Air India seals record order for almost 500 Airbus Boeing jets.webp">
+               <div class="row_2 ">
+            <div class="column_1">
+                <h1 class="top_news">Top Stories</h1>
+                </br></br>
+
+                <div class="slides">
+                    <a href="#Air India seals record order for almost 500 Airbus Boeing jets"><img class="mySlides"
+                            src="/static/pics/Ferrari reveal their 'Valentine' as new car launched for 2023 Formula 1 championship challenge.jpg"
+                            style="width:100%"></a>
+                    <img class="mySlides"
+                        src="/static/pics/Paris Olympics Ukrainian president Volodymyr Zelenskyy says no place for Russia at 2024 Games while invasion continues.jpeg"
+                        style="width:100%">
+                    <!-- <img class="mySlides" src="images/Ben Duckett vows to 'take every chance' for England | New Zealand overlook late Trent Boult call-up amid cyclone chaos .jpeg" style="width:100%"> -->
                 </div>
 
 
