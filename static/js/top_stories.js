@@ -1,16 +1,17 @@
-function randomTopStories() {
-    let urls = ["News_Pages/Five migrants die when boat sinks.html",
-        "News_Pages/Ferrari reveal their 'Valentine as new car launched for 2023 Formula 1 championship challenge.html",
-        "News_Pages/FBI Russia probe helped by Australian diplomat tip.html",
-        "News_Pages/Earthquake fans anti-Syrian sentiment in Turkey amid desperate conditions.html",
-        "News_Pages/Court orders Trump administration to give immigrant teens abortion access.html",
-        "News_Pages/China Xi calls for early resolution of Iran nuclear issue.html.html",
-        "News_Pages/Ben Duckett will take every chance for England, while New Zealand overlook Trent Boult.html",
-        "News_Pages/As U.S. budget fight looms, Republicans flip their fiscal script.html",
-        "News_Pages/Air India seals record order for almost 500 Airbus Boeing jets.html",
-    ];
 
-    let randomIndex = Math.floor(Math.random() * urls.length);
-    let randomUrl = urls[randomIndex];
-    window.location = randomUrl;
+
+// Create an array of the links to choose from:
+var links = new Array();
+links[0] ="{{url_for('news1India')}}";
+links[1] = "http://www.bing.com/";
+links[2] = "http://www.yahoo.com/";
+links[3] = "http://www.apple.com/";
+
+function openLink() {
+  // Chooses a random link:
+  var i = Math.floor(Math.random() * links.length);
+  // Directs the browser to the chosen target:
+  parent.location = links[i];
+  return false;
 }
+
