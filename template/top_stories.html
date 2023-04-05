@@ -4,20 +4,20 @@
 
 
 var links = new Array();
-links[0] = "https://web-production-2888.up.railway.app/news2Paris/";
-links[1] = "https://web-production-2888.up.railway.app/news7Tesla/";
-links[2] = "https://web-production-2888.up.railway.app/news17Reb/";
-links[3] = "https://web-production-2888.up.railway.app/news16Instant/";
-links[4] = "https://web-production-2888.up.railway.app/news6Newz/";
-links[5] = "https://web-production-2888.up.railway.app/news4Six/";
-links[6] = "https://web-production-2888.up.railway.app/news10Leb/";
-links[7] = "https://web-production-2888.up.railway.app/news8Ben/";
-links[8] = "https://web-production-2888.up.railway.app/news18sec/";
+links[0] = "https://web-production-2888.up.railway.app/news2Paris";
+links[1] = "https://web-production-2888.up.railway.app/news7Tesla";
+links[2] = "https://web-production-2888.up.railway.app/news17Reb";
+links[3] = "https://web-production-2888.up.railway.app/news16Instant";
+links[4] = "https://web-production-2888.up.railway.app/news6Newz";
+links[5] = "https://web-production-2888.up.railway.app/news4Six";
+links[6] = "https://web-production-2888.up.railway.app/news10Leb";
+links[7] = "https://web-production-2888.up.railway.app/news8Ben";
+links[8] = "https://web-production-2888.up.railway.app/news18sec";
 
 function openLink() {
 
   var i = Math.floor(Math.random() * links.length);
-  
+
   parent.location = links[i];
   return false;
 }
