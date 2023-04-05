@@ -1,5 +1,5 @@
 const slideshow = document.querySelector('.slideshow');
-const slides = slideshow.getElementsByTagName('img');
+const slides = slideshow.getElementsByTagName('');
 let currentSlide = 0;
 const slideInterval = setInterval(nextSlide, 2000);
 
