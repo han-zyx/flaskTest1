@@ -24,7 +24,7 @@
 
     }
 
-    p {
+    .about p {
     margin-bottom: 0px;
     text-align: justify;
 
@@ -33,7 +33,6 @@
     line-height: normal;
     font-family: "Nunito Sans";
     font-size: 16px;
-
     color: #333;
 
 
@@ -69,6 +68,9 @@
     .unit p:first-of-type {
       font-weight: bolder;
       margin-bottom: 5px;
+      font-family: "Nunito Sans";
+      font-size: 16px;
+      color: #333;
     }
 
     @media screen and (max-width:820px) {
