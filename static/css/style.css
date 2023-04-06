@@ -235,3 +235,7 @@ width: 100%;
    padding-right:2%;
 }
 
+.predictBtn{
+  display: flex;
+  align-items: center;
+}
