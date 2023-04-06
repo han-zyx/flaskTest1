@@ -94,24 +94,6 @@ textarea{
   /* border: 2px solid palevioletred; */
 }
 
-/*
-.column_1,
-.column_2,
-.column_3,
-.column_4,
-.column_5,
-.column_6,
-.column_7,
-.column_8,
-.column_9,
-.column_10,
-.column_11,
-.column_12,
-.column_13,
-.column_14{
-  overflow: hidden;
-  backdrop-filter: blur(1px);
-}*/
 
 .row_13{
   height: 60%;
@@ -243,11 +225,6 @@ width: 100%;
   /* background-color: gray; */
   padding: 2% 2% 2%;
 }
-
-.column_2{
-    width: 100%;
-    display: inline-block;
-  }
 
 .predict{
   display: flex;
