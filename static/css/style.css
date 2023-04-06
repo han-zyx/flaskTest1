@@ -176,7 +176,7 @@ textarea{
 .column_7,
 .column_9,
 .column_11 {
-  width: 35%;
+  /*width: 35%;*/
   position: relative;
   /* background-color: yellow; */
   padding: 2% 2% 2%;
@@ -253,3 +253,8 @@ width: 100%;
   display: flex;
   align-items: center;
 }
+.td{
+   padding-left:2%;
+   padding-right:2%;
+}
+
